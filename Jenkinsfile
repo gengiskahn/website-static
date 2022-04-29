@@ -13,7 +13,6 @@ pipeline {
              steps {
                 script {
                   sh '''
-                    git clone https://github.com/gengiskahn/website-static .
                     docker build -t ${ID_DOCKER}/$IMAGE_NAME:$IMAGE_TAG .
                   '''
                 }
